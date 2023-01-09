@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main()
+{
+    int first,last,div,detect;
+    printf("Enter starting number: ");
+    scanf("%d", &first);
+    printf("Enter the last number: ");
+    scanf("%d", &last);
+    printf("\nPrime numbers between %d and %d are: ",first,last);
+
+    while (first<last){
+        detect = 0;
+        if (first<=1){
+            first++;
+            continue;
+        }
+        for (div=2 ; div<=first/2 ; div++){
+            if(first%div == 0){
+                detect = 1;
+                break;
+            }
+        }
+        if(detect == 0){
+            printf ("%d ",first);
+        }
+        first++;
+    }
+    printf ("\n\n");
+    return 0;
+}
