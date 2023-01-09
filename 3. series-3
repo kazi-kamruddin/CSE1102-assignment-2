@@ -11,6 +11,6 @@ int main()
         fact *= i;
         sum += fact;
     }
-    printf ("1! + 2! + 3! + ... + %lld! = %lld", n, sum);
+    printf ("\n1! + 2! + 3! + ... + %lld! = %lld\n", n, sum);
     return 0;
 }
