@@ -1,1 +1,16 @@
+#include<stdio.h>
 
+int main()
+{
+    long long int n,i,j,fact=1,sum=0;
+    printf ("enter a number: ");
+    scanf("%lld", &n);
+
+    for(i=1;i<=n;i++)
+    {
+        fact *= i;
+        sum += fact;
+    }
+    printf ("1! + 2! + 3! + ... + %lld! = %lld", n, sum);
+    return 0;
+}
