@@ -1,5 +1,47 @@
 #include<stdio.h>
 
+int main() {
+
+    int x,y,z,i,gcd1,gcd2,lcm1,lcm2,max ;
+    printf ("enter 3 numbers: ");
+    scanf ("%d %d %d", &x ,&y, &z);
+
+    for (i=1 ; i<=x && i<=y ; i++){
+        if(x%i==0 && y%i==0)
+            gcd1 = i;
+    }
+    for (i=1 ; i<=gcd1 && i<=z ; i++){
+        if(gcd1%i==0 && z%i==0)
+            gcd2 = i;
+    }
+    printf ("\nGCD of %d, %d, %d is: %d",x,y,z,gcd2);
+
+    max = (x>y)? x:y;
+    while(1){
+        if(max%x==0 && max%y==0){
+            lcm1=max;
+            break;
+        }
+        max++;
+    }
+
+    max = (lcm1>z)? lcm1:z;
+    while(1){
+        if(max%lcm1==0 && max%z==0){
+            lcm2=max;
+            break;
+        }
+        max++;
+    }
+    printf ("\nLCM of %d, %d, %d is: %d\n",x,y,z,lcm2);
+
+    return 0;
+}
+
+/*NICHERTA FUNCTION DIYE KORA*/
+
+#include<stdio.h>
+
 int gcd(int, int);
 int lcm(int, int);
 
