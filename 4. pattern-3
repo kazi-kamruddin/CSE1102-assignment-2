@@ -18,14 +18,11 @@ int main()
     }
 
     for (i=1 ; i<=r-2 ; i++){
-         for (j=1 ; j<=1 ; j++){
-            printf ("%d", j);
-         }
-         for (j=1 ; j<=r-2 ; j++){
-            printf (" ");
-         }
-         for (j=1 ; j<=1 ; j++){
-            printf ("%d", j);
+         for (j=1 ; j<=r ; j++){
+             if (j==1 || j==r)
+                printf ("1");
+             else
+                printf (" ");
          }
          printf("\n");
     }
