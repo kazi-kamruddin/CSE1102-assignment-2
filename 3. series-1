@@ -1,1 +1,25 @@
+#include <stdio.h>
+#include  <math.h>
 
+int main () {
+
+    int f=5, sum=0, n,i;
+    printf ("Enter nth term: ");
+    scanf ("%d",&n);
+
+    for (i=1 ; i<=n ; i++){
+
+        if(i%2 != 0){
+            sum = sum+f;
+            f = abs(f) + 6;
+            f = -f;
+        }
+        else {
+            sum = sum + f;
+            f = abs(f) + 6;
+        }
+    }
+    printf("\nsum is: %d\n", sum);
+
+    return 0;
+}
