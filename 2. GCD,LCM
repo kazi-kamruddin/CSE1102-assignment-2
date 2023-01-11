@@ -38,7 +38,9 @@ int main() {
     return 0;
 }
 
+*******************************
 /*NICHERTA FUNCTION DIYE KORA*/
+*******************************
 
 #include<stdio.h>
 
